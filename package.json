@@ -1,0 +1,25 @@
+{
+  "name": "url-minimizer",
+  "version": "0.0.1",
+  "description": "URL Shortener Microservice for FreeCodeCamp",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamEduard/fcc-url-minimizer.git"
+  },
+  "author": "Ramón Serrano <ramon.calle.88@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/RamEduard/fcc-url-minimizer/issues"
+  },
+  "homepage": "https://github.com/RamEduard/fcc-url-minimizer#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.4.4",
+    "valid-url": "^1.0.9"
+  }
+}
