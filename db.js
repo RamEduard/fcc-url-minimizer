@@ -9,11 +9,11 @@ var siteSchema = new Schema({
 var Site = mongoose.model('Site', siteSchema)
 var sites = module.exports.sites = []
 
-var getSite = function(id) {
+var getSite = function(url) {
 	var originalUrl = false;
 
 	sites.forEach(function(site) {
-		if (site._id == id) {
+		if (site.url == url) {
 			originalUrl = site.originalUrl
 		}
 	})
