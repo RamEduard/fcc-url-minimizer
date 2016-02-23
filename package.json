@@ -1,6 +1,6 @@
 {
   "name": "url-minimizer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "URL Shortener Microservice for FreeCodeCamp",
   "main": "server.js",
   "scripts": {

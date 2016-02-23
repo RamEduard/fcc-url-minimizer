@@ -10,7 +10,9 @@ app.set('port', (process.env.PORT || 5000))
 app.set('app_url', (process.env.APP_URL || 'http://localhost:' + app.get('port')))
 
 app.get('/', function(request, response) {
-	response.render('index')
+	response.render('index', {
+		app_url: app.get('app_url')
+	})
 })
 
 require('./controllers/url')(app)
