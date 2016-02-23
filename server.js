@@ -7,7 +7,7 @@ app.engine('handlebars', exphbs({defaultLayout: 'main'}))
 
 app.set('view engine', 'handlebars')
 app.set('port', (process.env.PORT || 5000))
-app.set('app_url', 'http://localhost:' + app.get('port'))
+app.set('app_url', (process.env.APP_URL || 'http://localhost:' + app.get('port')))
 
 app.get('/', function(request, response) {
 	response.render('index')
